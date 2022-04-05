@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(16, 105, 133);
+}
+.container {
+    
+    color: #fff;
+    font-size: 20px;
+    display: grid;
+    grid-gap: 1rem; 
+    grid-template-areas: 
+    "header header header"
+    "sidebar sidebar sidebar"
+    "footer footer footer";
+}
+
+.item { 
+    padding: 5rem;
+    border-radius: 30px;   
+}
+.item1 {
+    position: sticky;
+    top: 0;
+    background-color: rgb(2, 51, 70);
+    grid-area: header;
+    font-size: 45px;
+    text-align: center;
+    transition: all 2s ease-in-out;
+    font-weight: bold;
+    z-index: 1;
+}
+.item1:hover {
+    font-size: 60px;
+    color: aqua;
+    
+}
+a {
+    background: url(./tesla\ project\ photo.png) no-repeat center center/cover;
+    grid-area: sidebar;
+    text-align: center;
+    text-decoration: none;
+}
+.item2 {
+    position: abslute;
+    font-size: 60px;
+    width: 50vw;
+    height: 75vh;
+    color: #fff;
+    transition: all 2s ease-in-out;
+    text-align: center;
+    margin-left:18rem;
+    margin-top: 80px;
+    font-weight: bold;
+
+    
+}
+.item2:hover {
+    font-size: 30px;
+    color: rgb(77, 4, 4);
+    font-weight: bold;
+    transform:rotate(360deg);
+}
+
+
+@media (max-width: 1000px) {
+    .item2{
+        margin-right: 8rem;
+    }
+}
+

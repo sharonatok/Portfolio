@@ -1,0 +1,69 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(2, 19, 77);
+    display: flex;
+    list-style: none;
+}
+.card3 {
+    font-size: 24px;
+    text-align: center;
+    COLOR: aqua;
+    border-width: 5px;
+    border-color: rgb(1, 197, 204);
+    border-style:double;
+    margin: 30px;
+    line-height: 2;
+    width: 200vw;
+    height: 90vh;
+    padding: 100px; 
+    justify-content: center;
+    align-items: center;
+    align-content: space-between; 
+    border-radius: 50px;
+}
+.card3 ul p a{
+    list-style: none;
+    font-size: 50px;
+    line-height: 4;
+ 
+}
+.card3 ul p p:visited{
+    color: aqua;
+}
+.card3 ul p a:hover{
+    border:rgb(1, 197, 204) 3px dotted;
+    padding: 10px;
+    border-radius: 80px;
+    font-size: 30px;
+
+    
+}
+h2 {
+    font-size: 80px;
+}
+button{
+    background-color: aqua;
+    font-size: 30px;
+    transition: all 1s ease-in-out;  
+}
+button:hover{
+    transform: rotate3d(360deg);
+    font-size: 40px;
+}
+@media (max-width: 668px) {
+    .card3 {
+        height: inherit;
+       
+    }
+}
+@media (max-width: 518px) {
+    .card3 {
+        text-align: center;
+        border:none;
+    }
+}

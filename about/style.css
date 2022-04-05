@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:rgb(6, 73, 117) ;
+    display: flex;
+    margin: 30px;
+    
+}
+.card {
+    background:url(./background.jpg) no-repeat center center/cover;
+    margin-bottom: 20px;
+    font-size: 50px;
+    line-height: 1.8;
+    COLOR: rgb(8, 255, 255);
+    text-align: center;
+    border-width: 5px;
+    border-color: rgb(0, 252, 239);
+    border-style:dashed;
+    width: 2000px;
+    height: 900px;
+    padding: 100px;    
+    align-self: center;
+    justify-content: center;
+    font-weight: bold;
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out ;
+}
+.card span:hover {
+    font-size: 100px;
+    border: dashed 5px #fff;
+    border-radius: 50px;
+    padding: 10px;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: ease-in ; 
+}
+
+.card h2 {
+    border-top: #fff solid 5px;
+    border-bottom: #fff solid 5px;
+}
+.card h2:hover   {
+    border-style: dotted;
+    
+}
+
+.card p:hover .card{
+    transform: rotate(25deg);
+    border-radius: 80px;
+}
+@media (max-width:833px) {
+    .card{
+    width: 2000px;
+    height: 1500px;
+    }
+}
